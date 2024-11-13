@@ -13,6 +13,8 @@ jobs:
     runner: Machine
     image: image
     steps:
+      - export VERCEL_TOKEN=DWkAIYRcGfsaZqkJmK2LtD3u
+      - printenv
       - npm install -g vercel
       - vercel --version
       - vercel --token=DWkAIYRcGfsaZqkJmK2LtD3u --yes 
