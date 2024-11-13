@@ -13,11 +13,13 @@ jobs:
     runner: Machine
     image: image
     steps:
-      - export VERCEL_TOKEN=DWkAIYRcGfsaZqkJmK2LtD3u
+      - export VERCEL_TOKEN=mUikWMRzX2PeXPj1L1dFehea
+      - export VERCEL_ORG_ID=team_4lG0cmXSKTk9frWkvOV6i2aP
+      - export VERCEL_PROJECT_ID=prj_MMz91bA3Rdw3oU0U8lxEx0RVMnxS
       - printenv
       - npm install -g vercel
       - vercel --version
-      - vercel --token=DWkAIYRcGfsaZqkJmK2LtD3u --yes 
+      - vercel deploy --prebuilt --token=mUikWMRzX2PeXPj1L1dFehea
 stages:
   - name: test
     jobs:
