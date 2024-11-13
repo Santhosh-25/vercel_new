@@ -18,6 +18,7 @@ jobs:
       - export VERCEL_PROJECT_ID=prj_MMz91bA3Rdw3oU0U8lxEx0RVMnxS
       - printenv
       - npm install -g vercel
+      - vercel build
       - vercel --version
       - vercel deploy --prebuilt --token=mUikWMRzX2PeXPj1L1dFehea
 stages:
